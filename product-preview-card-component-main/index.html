@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Product preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="product-card">
+        <picture>
+          <source
+            media="(max-width: 375px)"
+            srcset="./images/image-product-mobile.jpg"
+          />
+          <source
+            media="(min-width: 376px)"
+            srcset="./images/image-product-desktop.jpg"
+          />
+          <img
+            src="./images/image-product-desktop.jpg"
+            alt="Perfume bottle"
+            class="product-image"
+          />
+        </picture>
+        <div class="product-info">
+          <h2>Perfume</h2>
+          <h3>Gabrielle Essence Eau De Parfum</h3>
+          <p>A floral, solar and voluptuous interpretation</p>
+          <div class="price">
+            <span class="old-price">$169.99</span>
+            <span class="new-price">$149.99</span>
+          </div>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

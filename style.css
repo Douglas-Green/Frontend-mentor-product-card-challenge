@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* CSS for desktop */
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* CSS for mobile */
+@media only screen and (max-width: 320px) {
+  .container {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+.product-card {
+  display: grid; /* Change this to grid */
+  grid-template-columns: 1fr 1fr; /* Add this */
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.product-image {
+  width: 100%; /* Change this to 100% */
+  object-fit: cover;
+}
+
+.product-info {
+  padding: 20px;
+}
+
+.product-card h2,
+.product-card h3 {
+  margin: 0;
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.old-price {
+  text-decoration: line-through;
+}
+
+.new-price {
+  color: red;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
