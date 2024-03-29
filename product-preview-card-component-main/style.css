@@ -10,13 +10,9 @@ html {
 }
 
 .product-card {
-  background-color: #a67c52; /* Darker color */
   display: flex;
-  border: 1px solid #ccc;
   border-radius: 10px;
-  overflow: hidden;
   max-width: 800px;
-  width: 100%;
 }
 
 .product-image {
@@ -27,16 +23,21 @@ html {
 .product-info {
   width: 50%;
   padding: 20px;
-  align-items: left;
+  align-items: flex-start;
 }
 
 @media only screen and (max-width: 375px) {
   .product-card {
     flex-direction: column;
+    align-items: flex-start;
   }
 
   .product-image,
   .product-info {
     width: 100%;
+  }
+
+  .product-info {
+    padding: 20px;
   }
 }
