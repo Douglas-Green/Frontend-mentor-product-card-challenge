@@ -1,11 +1,5 @@
 body,
 html {
-  background-color: #f3eac2; /* Cream color */
-  height: 100%;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   overflow: hidden; /* Prevent scrolling */
 }
 
@@ -33,6 +27,7 @@ html {
 .product-info {
   width: 50%;
   padding: 20px;
+  align-items: left;
 }
 
 @media only screen and (max-width: 375px) {
