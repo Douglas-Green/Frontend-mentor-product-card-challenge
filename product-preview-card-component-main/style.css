@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  background-color: #f3eac2; /* Cream color */
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Prevent scrolling */
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-card {
+  background-color: #a67c52; /* Darker color */
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 60rem; /* 60% of the entire page */
+  width: 60%;
+}
+
+.product-image {
+  width: 50%;
+  height: auto;
+}
+
+.product-info {
+  width: 50%;
+  padding: 2rem; /* 20px */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#perfume {
+  justify-content: left;
+}
+
+#product-heading {
+  font-size: 1.5rem;
+  margin-bottom: 1rem; /* 10px */
+}
+
+#product-text {
+  font-size: 1rem;
+  margin-bottom: 1rem; /* 10px */
+}
+
+.price {
+  font-size: 1.5rem;
+  margin-bottom: 1rem; /* 10px */
+}
+
+.new-price {
+  font-size: 1.5rem;
+  margin-bottom: 1rem; /* 10px */
+  color: #f3eac2; /* Cream color */
+}
+
+.old-price {
+  font-size: 1.5rem;
+  margin-bottom: 1rem; /* 10px */
+  text-decoration: line-through;
+  color: red;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem; /* Spacing between icon and text */
+  padding: 1rem 2rem; /* 10px 20px */
+  border: none;
+  background-color: green;
+  color: whitesmoke;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+button:active {
+  transform: scale(0.8);
+}
+
+@media only screen and (max-width: 375px) {
+  .product-card {
+    flex-direction: column;
+  }
+
+  .product-image,
+  .product-info {
+    width: 100%;
+  }
+}
